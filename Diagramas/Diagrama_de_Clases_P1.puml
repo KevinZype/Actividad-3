@@ -1,0 +1,31 @@
+@startuml Problema 1 - Notas
+
+skinparam classAttributeIconSize 0
+
+class Notas {
+    - valores: list
+    + __init__()
+    + guardar_notas(valores: list): void
+    + calcular_promedio(): float
+    + calcular_desviacion(): float
+    + calcular_mayor(): float
+    + calcular_menor(): float
+}
+
+class VentanaPrincipal {
+    - notas: Notas
+    - ventana: tk.Tk
+    - entradas: list
+    - lbl_promedio: tk.Label
+    - lbl_desviacion: tk.Label
+    - lbl_mayor: tk.Label
+    - lbl_menor: tk.Label
+    + __init__()
+    + crear_boton(padre, texto, comando, color, color_encima, color_letra): tk.Label
+    + calcular(): void
+    + limpiar(): void
+}
+
+VentanaPrincipal *-- Notas
+
+@enduml

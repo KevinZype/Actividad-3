@@ -1,0 +1,54 @@
+@startuml Problema 2 - Figuras
+
+abstract class Figura {
+    + calcular_volumen() : float
+    + calcular_superficie() : float
+}
+
+class Cilindro {
+    - radio : float
+    - altura : float
+    + __init__(radio: float, altura: float)
+    + calcular_volumen() : float
+    + calcular_superficie() : float
+}
+
+class Esfera {
+    - radio : float
+    + __init__(radio: float)
+    + calcular_volumen() : float
+    + calcular_superficie() : float
+}
+
+class Piramide {
+    - base : float
+    - altura : float
+    - apotema : float
+    + __init__(base: float, altura: float, apotema: float)
+    + calcular_volumen() : float
+    + calcular_superficie() : float
+}
+
+class Cubo {
+    - lado : float
+    + __init__(lado: float)
+    + calcular_volumen() : float
+    + calcular_superficie() : float
+}
+
+class Prisma {
+    - largo : float
+    - ancho : float
+    - altura : float
+    + __init__(largo: float, ancho: float, altura: float)
+    + calcular_volumen() : float
+    + calcular_superficie() : float
+}
+
+Figura <|-- Cilindro
+Figura <|-- Esfera
+Figura <|-- Piramide
+Figura <|-- Cubo
+Figura <|-- Prisma
+
+@enduml

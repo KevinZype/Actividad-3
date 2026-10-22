@@ -1,0 +1,37 @@
+@startuml Diagrama de Objetos - Figuras Geometricas
+
+left to right direction
+
+rectangle "<u>miVentanaPrincipal: VentanaPrincipal</u>" as principal
+
+rectangle "<u>cilindro: VentanaCilindro</u>" as vent_cil
+rectangle "<u>cilindro: Cilindro</u>" as obj_cil
+
+rectangle "<u>esfera: VentanaEsfera</u>" as vent_esf
+rectangle "<u>esfera: Esfera</u>" as obj_esf
+
+rectangle "<u>pirámide: VentanaPirámide</u>" as vent_pir
+rectangle "<u>pirámide: Piramide</u>" as obj_pir
+
+rectangle "<u>cubo: VentanaCubo</u>" as vent_cub
+rectangle "<u>cubo: Cubo</u>" as obj_cub
+
+rectangle "<u>prisma: VentanaPrisma</u>" as vent_pri
+rectangle "<u>prisma: Prisma</u>" as obj_pri
+
+principal -- vent_cil
+vent_cil -- obj_cil
+
+principal -- vent_esf
+vent_esf -- obj_esf
+
+principal -- vent_pir
+vent_pir -- obj_pir
+
+principal -- vent_cub
+vent_cub -- obj_cub
+
+principal -- vent_pri
+vent_pri -- obj_pri
+
+@enduml

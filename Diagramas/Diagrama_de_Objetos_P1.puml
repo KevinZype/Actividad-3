@@ -1,0 +1,8 @@
+@startuml Diagrama de Objetos - Notas
+
+rectangle "<u>miVentanaPrincipal: VentanaPrincipal</u>" as miVentanaPrincipal
+rectangle "<u>notas: Notas</u>" as notas
+
+miVentanaPrincipal -right- notas
+
+@enduml
